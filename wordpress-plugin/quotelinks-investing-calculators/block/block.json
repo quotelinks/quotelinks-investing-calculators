@@ -1,0 +1,33 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "quotelinks/investing-calculator",
+	"version": "1.0.0",
+	"title": "Quotelinks Investing Calculator",
+	"category": "widgets",
+	"description": "Add one of 22 free investing calculators: compound interest, dividend income, DRIP, inflation, stock return, portfolio backtest, bond yield, rule of 72 and more.",
+	"keywords": [ "calculator", "compound interest", "dividend", "inflation", "investment", "stock", "retirement", "finance", "ROI", "CAGR" ],
+	"textdomain": "quotelinks-investing-calculators",
+	"attributes": {
+		"calc": { "type": "string", "default": "compound-interest" },
+		"layout": { "type": "string", "enum": [ "wide", "narrow" ], "default": "wide" },
+		"theme": { "type": "string", "enum": [ "light", "dark", "auto" ], "default": "light" },
+		"currency": { "type": "string", "default": "USD" },
+		"autoHeight": { "type": "boolean", "default": true },
+		"credit": { "type": "string", "enum": [ "", "yes", "no" ], "default": "" },
+		"params": { "type": "object", "default": {} }
+	},
+	"supports": {
+		"html": false,
+		"align": [ "left", "center", "right", "wide", "full" ],
+		"spacing": { "margin": true }
+	},
+	"example": {
+		"attributes": { "calc": "compound-interest", "credit": "no" }
+	},
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./editor.css",
+	"style": "file:./style.css",
+	"viewScript": "file:./view.js",
+	"render": "file:./render.php"
+}

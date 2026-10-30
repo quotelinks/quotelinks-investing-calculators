@@ -1,0 +1,23 @@
+.wp-block-quotelinks-investing-calculator .qlic-frame {
+	display: block;
+	width: 100%;
+	border: 0;
+	background: transparent;
+}
+
+.wp-block-quotelinks-investing-calculator .qlic-credit {
+	margin: 6px 0 0;
+	font-size: 13px;
+}
+
+.wp-block-quotelinks-investing-calculator.aligncenter .qlic-frame,
+.wp-block-quotelinks-investing-calculator.aligncenter .qlic-credit {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.wp-block-quotelinks-investing-calculator.alignleft,
+.wp-block-quotelinks-investing-calculator.alignright {
+	width: 100%;
+	max-width: 400px;
+}

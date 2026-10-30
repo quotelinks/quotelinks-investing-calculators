@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Investing calculator embed examples | Quotelinks</title>
+<meta name="description" content="Live examples of the free Quotelinks investing calculators embedded on a web page: article width, sidebar, dark theme and starting values.">
+<link rel="canonical" href="https://quotelinks.github.io/quotelinks-investing-calculators/examples/">
+<style>
+  :root { --bg: #f8fafc; --fg: #0f172a; --muted: #475569; --card: #fff; --line: #e2e8f0; --link: #2563eb; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  header, main, footer { max-width: 1180px; margin: 0 auto; padding: 0 16px; }
+  header { padding-top: 32px; }
+  h1 { font-size: 30px; line-height: 1.2; margin: 0 0 8px; }
+  h2 { font-size: 21px; margin: 40px 0 6px; }
+  p { color: var(--muted); margin: 0 0 14px; }
+  a { color: var(--link); }
+  code { background: #e2e8f0; border-radius: 4px; padding: 1px 5px; font-size: 14px; }
+  .row { display: grid; grid-template-columns: minmax(0, 1fr) 400px; gap: 32px; align-items: start; }
+  .dark { background: #0f172a; border-radius: 12px; padding: 20px; }
+  .dark p { color: #cbd5e1; }
+  .dark a { color: #93c5fd; }
+  footer { padding: 40px 16px 48px; color: var(--muted); font-size: 14px; }
+  @media (max-width: 900px) { .row { grid-template-columns: minmax(0, 1fr); } }
+</style>
+</head>
+<body>
+<header>
+  <h1>Investing calculator embed examples</h1>
+  <p>Live <a href="https://www.quotelinks.com/calculators/">Quotelinks investing calculators</a> embedded with the standard copy-and-paste code. Source and documentation: <a href="https://github.com/quotelinks/quotelinks-investing-calculators">github.com/quotelinks/quotelinks-investing-calculators</a>.</p>
+</header>
+<main>
+  <h2>Article width</h2>
+  <p>Compound interest calculator with the default embed code.</p>
+  <iframe src="https://www.quotelinks.com/calculators/embed/compound-interest.html" title="Compound interest calculator" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"
+    style="display:block;width:100%;max-width:760px;height:700px;border:0"></iframe>
+  <p style="max-width:760px;margin:6px 0 0;font-size:13px"><a href="https://www.quotelinks.com/calculators/compound-interest.html">Compound interest calculator</a> by <a href="https://www.quotelinks.com/">Quotelinks</a></p>
+
+  <h2>Starting values and a sidebar</h2>
+  <p>Left: <code>?symbol=MSFT&amp;amount=10000&amp;from=2015-01</code>. Right: sidebar layout (400 px).</p>
+  <div class="row">
+    <div>
+      <iframe src="https://www.quotelinks.com/calculators/embed/what-if-invested.html?symbol=MSFT&amp;amount=10000&amp;from=2015-01" title="What if I had invested calculator" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"
+        style="display:block;width:100%;max-width:760px;height:690px;border:0"></iframe>
+      <p style="max-width:760px;margin:6px 0 0;font-size:13px"><a href="https://www.quotelinks.com/calculators/what-if-invested.html">What if I had invested calculator</a> by <a href="https://www.quotelinks.com/">Quotelinks</a></p>
+    </div>
+    <div>
+      <iframe src="https://www.quotelinks.com/calculators/embed/historical-inflation.html" title="Historical inflation calculator" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"
+        style="display:block;width:100%;max-width:400px;height:1010px;border:0"></iframe>
+      <p style="max-width:400px;margin:6px 0 0;font-size:13px"><a href="https://www.quotelinks.com/calculators/historical-inflation.html">Historical inflation calculator</a> by <a href="https://www.quotelinks.com/">Quotelinks</a></p>
+    </div>
+  </div>
+
+  <h2>Dark theme</h2>
+  <div class="dark">
+    <p>Dividend income calculator with <code>?theme=dark</code>.</p>
+    <iframe src="https://www.quotelinks.com/calculators/embed/dividend-income.html?theme=dark" title="Dividend income calculator" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"
+      style="display:block;width:100%;max-width:760px;height:1180px;border:0"></iframe>
+    <p style="max-width:760px;margin:6px 0 0;font-size:13px"><a href="https://www.quotelinks.com/calculators/dividend-income.html">Dividend income calculator</a> by <a href="https://www.quotelinks.com/">Quotelinks</a></p>
+  </div>
+</main>
+<footer>
+  All 22 calculators: <a href="https://www.quotelinks.com/calculators/">quotelinks.com/calculators</a> · Free stock widgets: <a href="https://quotelinks.github.io/quotelinks-stock-widgets/examples/">examples</a>
+</footer>
+<script src="https://www.quotelinks.com/calculators/resize.js" async></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+.qlic-editor .qlic-frame-wrap {
+	position: relative;
+}
+
+/* Lets a click select the block instead of going into the calculator frame. */
+.qlic-editor .qlic-shield {
+	position: absolute;
+	inset: 0;
+	z-index: 1;
+	cursor: pointer;
+}
+
+.qlic-editor.is-selected .qlic-shield {
+	display: none;
+}
+
+.qlic-ask {
+	margin: 0 0 12px;
+	padding: 14px 16px;
+	border: 1px solid #c3c4c7;
+	border-radius: 4px;
+	background: #f6f7f7;
+	color: #1e1e1e;
+	font-size: 13px;
+	line-height: 1.5;
+}
+
+.qlic-ask p {
+	margin: 0 0 10px;
+}
+
+.qlic-ask .qlic-ask-q {
+	font-weight: 600;
+}
+
+.qlic-ask .qlic-ask-btns {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+}
+
+.qlic-ask .qlic-ask-note {
+	margin: 10px 0 0;
+	color: #50575e;
+	font-size: 12px;
+}
+
+.qlic-param-help {
+	margin-top: -4px;
+}
